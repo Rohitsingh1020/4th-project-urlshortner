@@ -149,6 +149,7 @@
     "raw-body": "^2.4.3",
     "rc": "^1.2.8",
     "readdirp": "^3.6.0",
+    "redis": "^3.1.2",
     "registry-auth-token": "^4.2.1",
     "registry-url": "^5.1.0",
     "responselike": "^1.0.2",
