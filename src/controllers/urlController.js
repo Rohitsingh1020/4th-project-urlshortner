@@ -84,7 +84,7 @@ const createUrl = async function (req, res) {
         let createNewUrl = await urlModel.create(data);
         //console.log(createNewUrl)
         //set data in cache
-        //await SET_ASYNC(`${urlCode}`, JSON.stringify(createNewUrl))
+        await SET_ASYNC(`${urlCode}`, JSON.stringify(createNewUrl))
         return res.status(201).send({ status: true, message: "url created successfully", data: createNewUrl })
 
     } catch (err) {
