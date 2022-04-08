@@ -38,7 +38,7 @@ const isValidRequestBody = function (requestBody) {
     return Object.keys(requestBody).length > 0
 }
 
-//Function 2-
+//Function 2
 const isValid = function (value) {
     if (typeof value === 'undefined' || value === null) return false
     if (typeof value === 'String' && value.trim().length === 0) return false
@@ -48,13 +48,13 @@ const isValid = function (value) {
 
 
 
-//CREATE_URL-
+//CREATE_URL
 const createUrl = async function (req, res) {
     try {
 
         let data = req.body;
 
-        //validations-
+        //validations
         if (!isValidRequestBody(data)) {
             return res.status(400).send({ status: false, msg: "please provide some input to create data" })
         }
